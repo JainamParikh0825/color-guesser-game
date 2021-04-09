@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+:root {
+  --primary-color: #fff;
+  --secondary-color: #01579b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  font-size: 25px;
+  background-color: #333;
+}
+
+.main-heading {
+  min-width: 100%;
+  background-color: var(--secondary-color);
+  min-height: 20vh;
+  padding: 1em 0;
+}
+
+.heading-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.heading-title p {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.heading-color {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3em;
+  color: #fff;
+  word-spacing: 10px;
+}
+
+.main-options {
+  min-width: 100%;
+  min-height: 4vh;
+  background-color: var(--primary-color);
+
+  /* padding: 0 15em; */
+}
+
+.main-options div {
+  /* background-color: thistle; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 50%;
+  min-height: 4vh;
+  margin: 0 auto;
+}
+
+.main-options div div {
+  /* background-color: teal; */
+  min-height: 4vh;
+  padding: 0.5em 0.2em;
+  color: var(--secondary-color);
+  font-weight: 400;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+#new-game:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#colors-attempted-count {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.main-colors {
+  min-height: 72.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-colors .rules {
+  flex: 1;
+  /* background-color: tomato; */
+  border-right: 5px solid var(--primary-color);
+  padding: 1em;
+}
+
+.main-colors .rules,
+.main-colors .colors {
+  min-height: 72.5vh;
+}
+
+.main-colors .colors {
+  flex: 3.5;
+  /* background-color: turquoise; */
+}
+
+.main-colors .rules .rules-title {
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.rules-title span {
+  font-size: 2.5em;
+}
+
+.rules-content {
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.rules-content ul {
+  list-style: none;
+  color: var(--primary-color);
+}
+
+.rules-content ul li {
+  margin-bottom: 20px;
+}
+
+.colors {
+  padding-top: 1.5em;
+}
+
+.colors .score-display {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.color-options {
+  height: 550px;
+  width: 60%;
+  margin: 0 auto;
+  /* background-color: violet; */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: stretch;
+  align-items: center;
+}
+
+.color-options .color-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  transition: transform 0.3s;
+}
+
+.color-options .color-box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#color-1 {
+  background-color: rgb(255, 137, 120);
+}
+#color-2 {
+  background-color: rgb(47, 151, 49);
+}
+#color-3 {
+  background-color: rgb(86, 56, 144);
+}
+#color-4 {
+  background-color: rgb(212, 29, 220);
+}
+#color-5 {
+  background-color: rgb(151, 107, 103);
+}
+#color-6 {
+  background-color: rgb(19, 187, 16);
+}
