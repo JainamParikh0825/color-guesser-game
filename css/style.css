@@ -13,6 +13,7 @@
 
 body {
   max-height: 100vh;
+  min-width: 100%;
   font-size: 25px;
   background-color: #333;
 }
@@ -86,6 +87,7 @@ body {
 
 .main-colors {
   min-height: 72.5vh;
+  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,6 +136,7 @@ body {
 
 .rules-content ul li {
   margin-bottom: 20px;
+  font-size: 0.8em;
 }
 
 .colors {
@@ -158,6 +161,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
   justify-content: stretch;
   align-items: center;
+}
+
+.color-box.disappear {
+  visibility: hidden;
 }
 
 .color-options .color-box {
@@ -189,4 +196,14 @@ body {
 }
 #color-6 {
   background-color: rgb(19, 187, 16);
+}
+
+#current-result.correct {
+  color: green;
+  font-weight: 700;
+}
+
+#current-result.wrong {
+  color: red;
+  font-weight: 700;
 }
